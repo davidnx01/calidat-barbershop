@@ -1,0 +1,269 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Calidat Barbershop · pánsky barbershop v Poprade — neoficiálny návrh</title>
+<meta name="description" content="Neoficiálny návrh homepage pre Calidat Barbershop, Ludvíka Svobodu 72, Poprad. Pánske strihy a úprava brady, rezervácia telefonicky.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Passion+One:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --tile:#EEF2F5;      /* zem: porcelánový obklad */
+  --tile-2:#E1E7EC;
+  --navy:#13223F;      /* text + tabuľa */
+  --navy-2:#1C2F52;
+  --red:#C62832;       /* akcent: červený pás stĺpika */
+  --blue:#2347A0;      /* modrý pás stĺpika */
+  --chrome:#B8C2CC;    /* materiál: chróm kresla a nožníc */
+  --line:rgba(19,34,63,.16);
+  --muted:#4A5872;
+  --pole:repeating-linear-gradient(-45deg,var(--red) 0 14px,#fff 14px 24px,var(--blue) 24px 38px,#fff 38px 48px);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+html{background:var(--navy)}
+body{margin:0;background:var(--tile);color:var(--navy);font:400 17px/1.6 "Hanken Grotesk",system-ui,sans-serif;padding-left:14px;position:relative;min-height:100vh}
+body::before{content:"";position:absolute;left:0;top:0;bottom:0;width:14px;background:var(--pole);z-index:30}
+img{max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 32px}
+.cap{font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.num{font-variant-numeric:tabular-nums}
+
+/* pruh */
+.notice{background:var(--navy);color:#fff;font-size:13.5px;line-height:1.45;padding:9px 0}
+.notice p{margin:0}
+
+/* header */
+header{background:#fff;border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;gap:28px;min-height:76px}
+.brand{display:flex;align-items:baseline;gap:10px;text-decoration:none;margin-right:auto}
+.brand b{font:400 34px/1 "Passion One",sans-serif;letter-spacing:.01em}
+.brand span{font-size:11.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+nav{display:flex;gap:24px}
+nav a,.lnk{text-decoration:none;font-weight:600;font-size:15.5px;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .2s}
+nav a:hover,.lnk:hover{background-size:100% 1px}
+.hd-tel{font-weight:700;text-decoration:none;font-variant-numeric:tabular-nums;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;background:var(--red);color:#fff;text-decoration:none;font-weight:700;font-size:16px;border-radius:3px;transition:background .2s}
+.btn:hover{background:#A91F28}
+.btn.ghost{background:transparent;color:var(--navy);box-shadow:inset 0 0 0 2px var(--navy)}
+.btn.ghost:hover{background:var(--navy);color:#fff}
+
+/* hero: výklad holičstva */
+.hero{padding:56px 0 64px}
+.hero-g{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:56px;align-items:center}
+.window{background:var(--navy);padding:16px;border-radius:3px;position:relative}
+.window::after{content:"";position:absolute;left:-10px;right:-10px;bottom:-16px;height:16px;background:#D6DDE3;border-bottom:3px solid #A7B2BD}
+.transom{display:flex;justify-content:space-between;align-items:center;gap:12px;background:#DCE5EC;color:var(--navy);padding:10px 18px;margin-bottom:12px;font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
+.glass{position:relative;overflow:hidden;background:
+  linear-gradient(112deg,transparent 0 30%,rgba(255,255,255,.55) 30% 34%,transparent 34% 37%,rgba(255,255,255,.35) 37% 38.5%,transparent 38.5%),
+  linear-gradient(180deg,#F4F8FB,#D3DEE7);
+  aspect-ratio:16/11;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px}
+.glass .arc{width:min(78%,440px);height:auto;display:block;margin-bottom:-8px}
+.glass h1{margin:0;font:400 clamp(64px,10.4vw,132px)/.9 "Passion One",sans-serif;color:var(--navy);text-shadow:5px 5px 0 var(--red);letter-spacing:.01em}
+.glass .sub{margin-top:18px;font-size:13px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--navy)}
+.glass .sub i{font-style:normal;color:var(--red);padding:0 8px}
+.mullion{position:absolute;left:50%;top:0;bottom:0;width:0;border-left:1px solid rgba(19,34,63,.08)}
+
+.intro .cap{color:var(--red)}
+.intro h2{font:400 clamp(34px,4.2vw,50px)/1.02 "Passion One",sans-serif;margin:12px 0 18px}
+.intro blockquote{margin:0 0 26px;font-size:18.5px;line-height:1.55;color:var(--navy)}
+.intro blockquote small{display:block;margin-top:6px;font-size:13.5px;color:var(--muted)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:30px}
+.facts{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.facts li{display:grid;grid-template-columns:130px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.facts li span:first-child{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding-top:2px}
+.facts em{font-style:normal;color:var(--muted);font-size:13.5px}
+
+/* tabuľa pri zrkadle */
+.board-sec{background:var(--navy);color:#fff;padding:84px 0}
+.bz{display:grid;grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);gap:64px;align-items:stretch}
+.mirror{position:relative;border-radius:200px 200px 8px 8px;padding:12px;background:linear-gradient(135deg,#EEF2F5,#9DA9B5 45%,#E3E8ED 60%,#8C98A5);min-height:440px;display:flex}
+.mirror-in{flex:1;border-radius:190px 190px 4px 4px;background:
+  linear-gradient(125deg,transparent 0 22%,rgba(255,255,255,.5) 22% 27%,transparent 27% 31%,rgba(255,255,255,.28) 31% 33%,transparent 33%),
+  linear-gradient(180deg,#C9D4DE,#8FA0B2 70%,#7D8FA3);
+  display:flex;flex-direction:column;justify-content:flex-end;padding:28px}
+.sticker{background:#fff;color:var(--navy);padding:18px 20px 20px;border-radius:2px;transform:rotate(-2deg);box-shadow:0 2px 0 rgba(0,0,0,.12)}
+.sticker .cap{color:var(--red);font-size:11.5px}
+.sticker a{display:block;margin-top:6px;font:400 34px/1.05 "Passion One",sans-serif;text-decoration:none;font-variant-numeric:tabular-nums}
+.sticker p{margin:6px 0 0;font-size:13.5px;line-height:1.45;color:var(--muted)}
+.board h2{font:400 clamp(48px,6vw,76px)/.95 "Passion One",sans-serif;margin:0 0 6px}
+.board .lead{margin:0 0 30px;color:#C3CCDA;font-size:16px}
+.rows{list-style:none;margin:0;padding:0;border-top:2px solid #fff}
+.rows li{display:grid;grid-template-columns:1fr auto auto;align-items:baseline;gap:20px;padding:20px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+.rows b{font-weight:600;font-size:19px;line-height:1.3}
+.rows .t{color:#AFBACB;font-size:14.5px;white-space:nowrap}
+.rows .p{font-weight:700;font-size:24px;white-space:nowrap;min-width:5.6em;text-align:right}
+.rows .p::after{content:"";display:block;height:3px;width:28px;background:var(--red);margin:6px 0 0 auto}
+.board .src{margin:22px 0 0;font-size:13.5px;line-height:1.55;color:#AFBACB;max-width:56ch}
+
+/* kde nás nájdete */
+.find{padding:84px 0 92px}
+.find-g{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:64px;align-items:start}
+.find h2{font:400 clamp(38px,4.6vw,56px)/1 "Passion One",sans-serif;margin:0 0 26px}
+.plate{background:#fff;border:2px solid var(--navy);padding:6px}
+.plate-in{border:1px solid var(--navy);padding:24px 26px 20px}
+.plate h3{margin:0 0 14px;font:400 30px/1 "Passion One",sans-serif;display:flex;align-items:center;gap:12px}
+.plate h3::before{content:"";width:10px;height:30px;background:var(--pole);flex:none}
+.plate dl{margin:0;display:grid;grid-template-columns:1fr auto;font-variant-numeric:tabular-nums}
+.plate dt,.plate dd{margin:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:16.5px}
+.plate dt{font-weight:600}
+.plate dd{text-align:right}
+.plate dd.off{color:var(--muted)}
+.plate .note{margin:14px 0 0;font-size:13.5px;color:var(--muted);line-height:1.5}
+.addr{font-size:22px;line-height:1.35;font-weight:600;margin:0 0 6px}
+.addr-sub{margin:0 0 26px;color:var(--muted)}
+.links{list-style:none;margin:0 0 28px;padding:0;border-top:1px solid var(--line)}
+.links li{display:flex;justify-content:space-between;gap:16px;align-items:center;min-height:56px;border-bottom:1px solid var(--line)}
+.links li span{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.links a{font-weight:600;min-height:44px;display:inline-flex;align-items:center}
+.rating{display:flex;gap:16px;align-items:center;padding:18px 20px;background:var(--tile-2);font-size:15px;line-height:1.45}
+.rating strong{font:400 40px/1 "Passion One",sans-serif;white-space:nowrap}
+.rating em{font-style:normal;color:var(--muted);font-size:13.5px;display:block}
+
+footer{background:var(--navy);color:#C3CCDA;padding:26px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.mbar{display:none}
+
+@media (max-width:980px){
+  .hero-g,.bz,.find-g{grid-template-columns:1fr;gap:44px}
+  .mirror{min-height:0;max-width:440px}
+  .mirror-in{min-height:320px}
+  nav{display:none}
+}
+@media (max-width:640px){
+  body{padding-left:8px;font-size:16.5px}
+  body::before{width:8px}
+  .wrap{padding:0 18px}
+  .hd{min-height:64px;gap:12px}
+  .brand b{font-size:30px}
+  .brand span{display:none}
+  .hd .btn{display:none}
+  .hero{padding:28px 0 48px}
+  .window{padding:10px}
+  .transom{padding:8px 12px;font-size:10.5px;letter-spacing:.14em;margin-bottom:8px}
+  .glass{aspect-ratio:auto;padding:30px 12px 34px}
+  .glass h1{text-shadow:3px 3px 0 var(--red)}
+  .glass .sub{font-size:11px;letter-spacing:.16em}
+  .facts li{grid-template-columns:1fr;gap:2px}
+  .board-sec,.find{padding:60px 0}
+  .rows li{grid-template-columns:1fr auto;gap:4px 14px}
+  .rows .t{grid-column:1;grid-row:2}
+  .rows .p{grid-row:1 / span 2;grid-column:2;align-self:center;font-size:22px;min-width:0}
+  .rows b{font-size:17.5px}
+  .mirror-in{min-height:250px;padding:18px}
+  .plate-in{padding:20px 18px 16px}
+  .links li{flex-direction:column;align-items:flex-start;gap:0;padding:10px 0}
+  footer{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
+  .ctas .btn{flex:1 1 auto}
+  .board{order:-1}
+  .mirror{border-radius:160px 160px 8px 8px}
+  .mirror-in{border-radius:150px 150px 4px 4px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:40;background:#fff;border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom)) 16px}
+  .mbar a{min-height:50px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="notice"><div class="wrap"><p>Neoficiálny návrh — nie je to oficiálny web podniku · ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</p></div></div>
+
+<header>
+  <div class="wrap hd">
+    <a class="brand" href="#top" aria-label="Calidat Barbershop — na začiatok"><b>Calidat</b><span>Barbershop · Poprad</span></a>
+    <nav aria-label="Hlavná navigácia"><a href="#cennik">Cenník</a><a href="#hodiny">Hodiny</a><a href="#kontakt">Kontakt</a></nav>
+    <a class="hd-tel num" href="tel:+421951014989">0951 014 989</a>
+    <a class="btn" href="tel:+421951014989">Objednať sa</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap hero-g">
+      <div class="window">
+        <div class="transom"><span>Ludvíka Svobodu 72</span><span>Poprad</span></div>
+        <div class="glass">
+          <span class="mullion" aria-hidden="true"></span>
+          <svg class="arc" viewBox="0 0 440 110" aria-hidden="true"><defs><path id="arc" d="M30 100 Q220 -18 410 100"/></defs><text font-family="Hanken Grotesk, sans-serif" font-weight="700" font-size="24" letter-spacing="9" fill="#13223F"><textPath href="#arc" startOffset="50%" text-anchor="middle">BARBERSHOP</textPath></text></svg>
+          <h1 id="h1">Calidat</h1>
+          <div class="sub">Pánske strihy<i>·</i>Úprava brady</div>
+        </div>
+      </div>
+      <div class="intro">
+        <p class="cap">Barbershop v Poprade</p>
+        <h2>Strih a brada. Termín si dohodnete telefonicky.</h2>
+        <blockquote>„V salóne Calidat Barbershop, ktorý sa nachádza v Poprade, ponúkame rôzne moderné strihy pre pánov a kvalitnú kozmetiku.“<small>— z profilu podniku na Notino</small></blockquote>
+        <div class="ctas">
+          <a class="btn" href="tel:+421951014989">Zavolať 0951 014 989</a>
+          <a class="btn ghost" href="#cennik">Pozrieť cenník</a>
+        </div>
+        <ul class="facts">
+          <li><span>Hodnotenie</span><span><strong class="num">5,0 ★</strong> na Google, 50 hodnotení <em>· podľa verejných údajov (30. 9. 2026), overiť</em></span></li>
+          <li><span>Otvorené</span><span class="num">Po–Pi 9:00–17:00 <em>· overiť</em></span></li>
+          <li><span>Adresa</span><span>Ludvíka Svobodu 72, 058 01 Poprad</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="board-sec" id="cennik" aria-labelledby="cennik-h">
+    <div class="wrap bz">
+      <div class="mirror">
+        <div class="mirror-in">
+          <div class="sticker">
+            <p class="cap" style="margin:0">Objednávky</p>
+            <a href="tel:+421951014989">0951 014 989</a>
+            <p>„Rezervácia iba telefonicky.“ — Notino</p>
+          </div>
+        </div>
+      </div>
+      <div class="board">
+        <h2 id="cennik-h">Cenník</h2>
+        <p class="lead">Štyri služby tak, ako ich salón uvádza na Notino.</p>
+        <ul class="rows num">
+          <li><b>Pánsky strih</b><span class="t">45 minút</span><span class="p">18 – 20 €</span></li>
+          <li><b>Úprava brady</b><span class="t">30 minút</span><span class="p">10 €</span></li>
+          <li><b>Pánsky strih a úprava brady</b><span class="t">1 hodina</span><span class="p">25 €</span></li>
+          <li><b>Kompletná starostlivosť o vlasy a bradu</b><span class="t">1 hodina</span><span class="p">30 €</span></li>
+        </ul>
+        <p class="src">Ceny podľa profilu na Notino (1. 10. 2026), overiť. Na profile: „Tieto služby nemôžete rezervovať online. Rezervácia iba telefonicky.“ <a class="lnk" href="https://www.notino.sk/salony/calidat-barbershop/" rel="noopener" target="_blank">Profil na Notino</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="find" id="kontakt" aria-labelledby="kontakt-h">
+    <div class="wrap find-g">
+      <div class="plate" id="hodiny">
+        <div class="plate-in">
+          <h3>Otváracie hodiny</h3>
+          <dl>
+            <dt>Pondelok</dt><dd>9:00–17:00</dd>
+            <dt>Utorok</dt><dd>9:00–17:00</dd>
+            <dt>Streda</dt><dd>9:00–17:00</dd>
+            <dt>Štvrtok</dt><dd>9:00–17:00</dd>
+            <dt>Piatok</dt><dd>9:00–17:00</dd>
+            <dt>Sobota</dt><dd class="off">zatvorené</dd>
+            <dt>Nedeľa</dt><dd class="off">zatvorené</dd>
+          </dl>
+          <p class="note">Podľa profilu na quickbook.sk (1. 10. 2026) — overiť. Pred návštevou zavolajte.</p>
+        </div>
+      </div>
+      <div>
+        <h2 id="kontakt-h">Kde nás nájdete</h2>
+        <p class="addr">Ludvíka Svobodu 72<br>058 01 Poprad</p>
+        <p class="addr-sub"><a class="lnk" href="https://www.google.com/maps/search/Calidat+Barbershop+Poprad" rel="noopener" target="_blank">Otvoriť v Mapách Google</a></p>
+        <ul class="links">
+          <li><span>Telefón</span><a class="num" href="tel:+421951014989">+421 951 014 989</a></li>
+          <li><span>Instagram</span><a href="https://www.instagram.com/calidatbarber/" rel="noopener" target="_blank">@calidatbarber</a></li>
+          <li><span>Facebook</span><a href="https://www.facebook.com/calidatbarber/" rel="noopener" target="_blank">facebook.com/calidatbarber</a></li>
+          <li><span>Notino</span><a href="https://www.notino.sk/salony/calidat-barbershop/" rel="noopener" target="_blank">Profil salónu</a></li>
+        </ul>
+        <div class="rating"><strong class="num">5,0 ★</strong><span>Google, 50 hodnotení<em>Podľa verejných údajov (30. 9. 2026), overiť.</em></span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><span>Neoficiálny návrh webu · webdavid.sk · 2026</span><span>Calidat Barbershop · Ludvíka Svobodu 72, Poprad</span></div></footer>
+
+<div class="mbar"><a class="btn" href="tel:+421951014989">Zavolať</a><a class="btn ghost" href="https://www.google.com/maps/search/Calidat+Barbershop+Poprad" rel="noopener" target="_blank">Navigovať</a></div>
